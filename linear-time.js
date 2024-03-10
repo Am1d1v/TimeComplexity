@@ -11,6 +11,13 @@ function sumArray(array){
   return sum;
 }
 
+const arrayOne = [1, 10, 2, 20, 3, 30];
 console.time('Sum Array 1');
-console.log(sumArray([1, 10, 2, 20, 3, 30]));
+console.log(sumArray(arrayOne));
 console.timeEnd('Sum Array 1');
+
+
+const arrayTwo = Array.from({length: 10000000}, (_, index) => index + 1);
+console.time('Sum Array 2');
+console.log(sumArray(arrayTwo));
+console.timeEnd('Sum Array 2');
