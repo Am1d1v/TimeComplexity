@@ -25,3 +25,27 @@ function createArray(num){
   return arr;
 }
 
+
+/* 
+  Space Complexity: O(n^2);
+  Time Complexity: O(n^2);
+*/
+function createMatrix(num){
+
+  const matrix = [];
+
+  for (let i = 0; i < num; i++) {
+    
+    matrix[i] = [];
+
+    for (let j = 0; j < num; j++) {
+      
+      matrix[i][j] = j + i;
+      
+    }
+
+  }
+
+  return matrix;
+
+}
